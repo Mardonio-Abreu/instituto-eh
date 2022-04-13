@@ -19,10 +19,10 @@ $main-color:#66cdaa ;
 
 $padding-size:("regular": 20px, "medium": 10 px, "small": 5px);
 
-@mixin display-flex ($display, $align-content) 
+@mixin display-flex ($justify-content) 
 {
-    display:$display;
-    align-content: $align-content ;    
+    display:flex;
+    justify-content: $justify-content ;    
 }
 
 p {
@@ -46,7 +46,8 @@ a:visited {
 
 header {
     background-color: $main-color;
-    @include display-flex(flex, space-between);
+    @include display-flex(space-around);
+    align-items: center;
 }
 
 body {
@@ -57,7 +58,7 @@ nav {
     ul {
         background-color: darkcyan;
         padding: 20px;
-        @include display-flex(flex, space-around);
+        @include display-flex(space-around);
     }
 }
 
@@ -66,7 +67,7 @@ footer
     background-color: darkcyan;
     padding: map-get($padding-size, small);
     color: gainsboro;
-    @include display-flex(flex, end);
+    @include display-flex(end);
 }
 
 img {
@@ -97,7 +98,7 @@ h1 {
 
 .map {
     padding: map-get($padding-size, regular);
-    @include display-flex(flex, space-between);
+    @include display-flex(space-between);
     align-items: center;
 }
 
