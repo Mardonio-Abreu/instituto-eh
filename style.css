@@ -30,7 +30,7 @@ a:visited {
 header {
   background-color: #66cdaa;
   display: flex;
-  justify-content: space-between; }
+  align-content: space-between; }
 
 body {
   background-color: #66cdaa; }
@@ -39,14 +39,14 @@ nav ul {
   background-color: darkcyan;
   padding: 20px;
   display: flex;
-  justify-content: space-around; }
+  align-content: space-around; }
 
 footer {
   background-color: darkcyan;
-  padding: 10px;
+  padding: 5px;
   color: gainsboro;
   display: flex;
-  justify-content: end; }
+  align-content: end; }
 
 img {
   width: 25%;
@@ -57,7 +57,7 @@ img {
 .gallery img {
   width: 50%;
   height: auto;
-  padding: 10px; }
+  padding: 20px; }
 
 .text {
   display: flex;
