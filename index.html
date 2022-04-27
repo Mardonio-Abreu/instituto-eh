@@ -8,9 +8,8 @@
     <meta name="description"
         content="Somos una escuela en el oriente de la Ciudad de México con el proposito de proporcionar los recursos para que los estudiantes sean la mejor versión de si mismos">
     <meta name="keywords" content="primaria, secundaria, preescolar, oriente">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Instituto Ernest Hemingway</title>
 </head>
@@ -20,41 +19,40 @@
         <header><img src="images/logo.png" alt="logo">
             <h1>Instituto Ernest Hemingway</h1>
         </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html"> Inicio </a></li>
-            <li><a href="modelo-educativo.html">Modelo educativo</a></li>
-            <li><a href="oferta-educativa.html">Oferta educativa</a></li>
-            <li><a href="instalaciones.html">Instalaciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <main>
-        
-        <div class="text">
-            <h2> Historia </h2>
-            <img src="images/history.jpg" alt="books">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae expedita officiis voluptatibus maiores
-                animi inventore nesciunt voluptatem impedit quos dignissimos, ad deserunt omnis id eligendi quisquam
-                similique, recusandae debitis? Obcaecati.
-                Dolorum, quam labore! Aliquid eaque modi officiis beatae, ut dolorum deserunt ab porro architecto
-                sapiente explicabo adipisci, a cumque exercitationem expedita amet aspernatur totam magnam. Aliquid
-                consectetur repudiandae autem exercitationem!
-                Consequatur fugit officia ipsum laboriosam recusandae dolores. Veniam unde, odio quis iste porro
-                possimus recusandae quam ut, modi corporis aut veritatis enim fugiat aliquid natus temporibus pariatur
-                assumenda. Repellendus, quidem.
-                Quo ea sint excepturi mollitia sapiente molestiae, officiis tenetur quis quod numquam eius. Facere quam
-                corporis, rerum inventore alias aut, nulla minus est quia veniam, amet excepturi. Nesciunt, est quaerat.
-                Deleniti aliquid beatae fuga odit. Quam quia rerum placeat atque aspernatur, quos totam in, voluptatum
-                accusantium perspiciatis ratione iusto quae autem repellendus architecto distinctio, sit ducimus
-                eligendi obcaecati quo aliquam?
-            </p>
-        </div>
-        <div class="text">
-            <h2>Avisos </h2>
-            <img src="images/news.jpg" alt="books">
-            <div class="paragraph">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="modelo-educativo.html">Modelo Educativo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="oferta-educativa.html">Oferta Educativa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="instalaciones.html">Instalaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <main>
+
+            <div class="text">
+                <h2> Historia </h2>
+                <img src="images/history.jpg" alt="books">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae expedita officiis voluptatibus maiores
                     animi inventore nesciunt voluptatem impedit quos dignissimos, ad deserunt omnis id eligendi quisquam
                     similique, recusandae debitis? Obcaecati.
@@ -63,18 +61,52 @@
                     consectetur repudiandae autem exercitationem!
                     Consequatur fugit officia ipsum laboriosam recusandae dolores. Veniam unde, odio quis iste porro
                     possimus recusandae quam ut, modi corporis aut veritatis enim fugiat aliquid natus temporibus
-                    pariatur assumenda. Repellendus, quidem.
+                    pariatur
+                    assumenda. Repellendus, quidem.
                     Quo ea sint excepturi mollitia sapiente molestiae, officiis tenetur quis quod numquam eius. Facere
-                    quam corporis, rerum inventore alias aut, nulla minus est quia veniam, amet excepturi. Nesciunt, est
+                    quam
+                    corporis, rerum inventore alias aut, nulla minus est quia veniam, amet excepturi. Nesciunt, est
                     quaerat.
                     Deleniti aliquid beatae fuga odit. Quam quia rerum placeat atque aspernatur, quos totam in,
-                    voluptatum accusantium perspiciatis ratione iusto quae autem repellendus architecto distinctio, sit
-                    ducimus eligendi obcaecati quo aliquam?
+                    voluptatum
+                    accusantium perspiciatis ratione iusto quae autem repellendus architecto distinctio, sit ducimus
+                    eligendi obcaecati quo aliquam?
+                </p>
             </div>
-    </main>
-    <footer>
-        <span>Telefono 55 55 55 55 </span> <span>Dirección calle Falsa 32</span>
-    </footer>
+            <div class="text">
+                <h2>Avisos </h2>
+                <img src="images/news.jpg" alt="books">
+                <div class="paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae expedita officiis voluptatibus
+                        maiores
+                        animi inventore nesciunt voluptatem impedit quos dignissimos, ad deserunt omnis id eligendi
+                        quisquam
+                        similique, recusandae debitis? Obcaecati.
+                        Dolorum, quam labore! Aliquid eaque modi officiis beatae, ut dolorum deserunt ab porro
+                        architecto
+                        sapiente explicabo adipisci, a cumque exercitationem expedita amet aspernatur totam magnam.
+                        Aliquid
+                        consectetur repudiandae autem exercitationem!
+                        Consequatur fugit officia ipsum laboriosam recusandae dolores. Veniam unde, odio quis iste porro
+                        possimus recusandae quam ut, modi corporis aut veritatis enim fugiat aliquid natus temporibus
+                        pariatur assumenda. Repellendus, quidem.
+                        Quo ea sint excepturi mollitia sapiente molestiae, officiis tenetur quis quod numquam eius.
+                        Facere
+                        quam corporis, rerum inventore alias aut, nulla minus est quia veniam, amet excepturi. Nesciunt,
+                        est
+                        quaerat.
+                        Deleniti aliquid beatae fuga odit. Quam quia rerum placeat atque aspernatur, quos totam in,
+                        voluptatum accusantium perspiciatis ratione iusto quae autem repellendus architecto distinctio,
+                        sit
+                        ducimus eligendi obcaecati quo aliquam?
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                    crossorigin="anonymous"></script>
+        </main>
+        <footer>
+            <span>Telefono 55 55 55 55 </span> <span>Dirección calle Falsa 32</span>
+        </footer>
 </body>
 
 </html>
