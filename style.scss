@@ -54,13 +54,13 @@ body {
     background-color: $main-color;
 }
 
-footer 
+/* footer 
 {
     background-color: darkcyan;
     padding: map-get($padding-size, small);
     color: gainsboro;
     @include display-flex(end);
-}
+} */
 
 img {
     width: 25%;
