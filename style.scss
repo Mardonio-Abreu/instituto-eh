@@ -54,14 +54,6 @@ body {
     background-color: $main-color;
 }
 
-nav {
-    ul {
-        background-color: darkcyan;
-        padding: 20px;
-        @include display-flex(space-around);
-    }
-}
-
 footer 
 {
     background-color: darkcyan;
@@ -87,9 +79,14 @@ img {
 
 .text {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items:flex-start;
 }
 
+h1
+{
+    text-align: center;
+}
 
 h2,
 h1 {
@@ -169,3 +166,4 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
 }
+

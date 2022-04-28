@@ -44,13 +44,6 @@ body {
   background-color: #66cdaa;
 }
 
-nav ul {
-  background-color: darkcyan;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-
 footer {
   background-color: darkcyan;
   padding: 5px;
