@@ -29,21 +29,6 @@ p {
     padding: map-get($padding-size, regular);
 }
 
-a {
-    text-decoration: none;
-    color: gainsboro;
-    padding: map-get($padding-size, regular);
-}
-
-a:hover {
-    color: darkkhaki;
-    background-color: lightseagreen;
-}
-
-a:visited {
-    color: bisque;
-}
-
 header {
     background-color: $main-color;
     @include display-flex(space-around);
