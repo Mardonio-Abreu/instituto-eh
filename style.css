@@ -29,14 +29,7 @@ body {
   background-color: #66cdaa;
 }
 
-/* footer 
-{
-    background-color: darkcyan;
-    padding: map-get($padding-size, small);
-    color: gainsboro;
-    @include display-flex(end);
-} */
-img {
+.text img {
   width: 25%;
   height: auto;
   padding: 20px;
@@ -175,6 +168,13 @@ input[type=text] {
 
   .computer-lab {
     grid-area: computer-lab;
+  }
+
+  header img {
+    width: 45%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10%;
   }
 }
 
