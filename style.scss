@@ -8,7 +8,7 @@
     list-style-type: none;
 }
 
-$main-color:#66cdaa ;
+$main-color:#66cdaa;
 
 .flex {
     display: flex;
@@ -19,10 +19,9 @@ $main-color:#66cdaa ;
 
 $padding-size:("regular": 20px, "medium": 10 px, "small": 5px);
 
-@mixin display-flex ($justify-content) 
-{
-    display:flex;
-    justify-content: $justify-content ;    
+@mixin display-flex ($justify-content) {
+    display: flex;
+    justify-content: $justify-content;
 }
 
 p {
@@ -65,11 +64,10 @@ img {
 .text {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
-h1
-{
+h1 {
     text-align: center;
 }
 
@@ -78,11 +76,6 @@ h1 {
     padding: map-get($padding-size, regular);
 }
 
-.map {
-    padding: map-get($padding-size, regular);
-    @include display-flex(space-between);
-    align-items: center;
-}
 
 .gallery {
     display: grid;
@@ -91,6 +84,17 @@ h1 {
     grid-template-areas: "classroom playground"
         "soccer-field pool"
         "laboratory computer-lab";
+
+
+    }
+
+.text {
+    img {
+        width: 25%;
+        height: auto;
+        padding: map-get($padding-size, regular);
+        border-radius: 10%;
+    }
 
 }
 
@@ -109,20 +113,17 @@ h1 {
     @extend .flex;
 }
 
-.pool 
-{
+.pool {
     grid-area: pool;
     @extend .flex;
 }
 
-.laboratory 
-{
+.laboratory {
     grid-area: laboratory;
     @extend .flex;
 }
 
-.computer-lab 
-{
+.computer-lab {
     grid-area: computer-lab;
     @extend .flex;
 }
@@ -152,3 +153,78 @@ input[type=text] {
     margin: 8px 0;
 }
 
+@media (max-width: 700px) {
+    .contact {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+        grid-template-areas: "map"
+            "data";
+    }
+
+    .map {
+        grid-area: map;
+        @extend .flex;
+
+    }
+
+    .data {
+        grid-area: data;
+        @extend .flex;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 16.6%);
+        grid-template-areas: "classroom"
+            "playground"
+            "soccer-field"
+            "pool"
+            "laboratory"
+            "computer-lab";
+    }
+
+    .text{
+
+        img {
+            width: 75%;
+            height: auto;
+            padding: map-get($padding-size, regular);
+            border-radius: 10%;
+        }
+
+    }
+
+    .classroom {
+        grid-area: classroom;
+        @extend .flex;
+    }
+
+    .playground {
+        grid-area: playground;
+        @extend .flex;
+    }
+
+    .soccer-field {
+        grid-area: soccer-field;
+        @extend .flex;
+    }
+
+    .pool {
+        grid-area: pool;
+        @extend .flex;
+    }
+
+    .laboratory {
+        grid-area: laboratory;
+        @extend .flex;
+    }
+
+    .computer-lab {
+        grid-area: computer-lab;
+        @extend .flex;
+    }
+
+
+}

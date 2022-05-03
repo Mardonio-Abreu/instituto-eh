@@ -64,18 +64,18 @@ h1 {
   padding: 20px;
 }
 
-.map {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 33% 33% 33%;
   grid-template-areas: "classroom playground" "soccer-field pool" "laboratory computer-lab";
+}
+
+.text img {
+  width: 25%;
+  height: auto;
+  padding: 20px;
+  border-radius: 10%;
 }
 
 .classroom {
@@ -121,6 +121,61 @@ input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
+}
+
+@media (max-width: 700px) {
+  .contact {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    grid-template-areas: "map" "data";
+  }
+
+  .map {
+    grid-area: map;
+  }
+
+  .data {
+    grid-area: data;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 16.6%);
+    grid-template-areas: "classroom" "playground" "soccer-field" "pool" "laboratory" "computer-lab";
+  }
+
+  .text img {
+    width: 75%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10%;
+  }
+
+  .classroom {
+    grid-area: classroom;
+  }
+
+  .playground {
+    grid-area: playground;
+  }
+
+  .soccer-field {
+    grid-area: soccer-field;
+  }
+
+  .pool {
+    grid-area: pool;
+  }
+
+  .laboratory {
+    grid-area: laboratory;
+  }
+
+  .computer-lab {
+    grid-area: computer-lab;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
