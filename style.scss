@@ -38,19 +38,13 @@ body {
     background-color: $main-color;
 }
 
-/* footer 
-{
-    background-color: darkcyan;
-    padding: map-get($padding-size, small);
-    color: gainsboro;
-    @include display-flex(end);
-} */
-
-img {
-    width: 25%;
-    height: auto;
-    padding: map-get($padding-size, regular);
-    border-radius: 10%;
+.text {
+    img {
+        width: 25%;
+        height: auto;
+        padding: map-get($padding-size, regular);
+        border-radius: 10%;
+    }
 }
 
 .gallery {
@@ -86,7 +80,7 @@ h1 {
         "laboratory computer-lab";
 
 
-    }
+}
 
 .text {
     img {
@@ -185,7 +179,7 @@ input[type=text] {
             "computer-lab";
     }
 
-    .text{
+    .text {
 
         img {
             width: 75%;
@@ -226,5 +220,14 @@ input[type=text] {
         @extend .flex;
     }
 
+    header {
+        img {
+            width: 45%;
+            height: auto;
+            padding: map-get($padding-size, regular);
+            border-radius: 10%;
+        }
 
+
+    }
 }
